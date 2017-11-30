@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.header {
+  background-color:#151e28;
+  color:white;
+  height:75px;
+  font-family: 'Butcherman', cursive;
+
+}
