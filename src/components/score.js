@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/score.css";
 
-class Score extends React.Components {
+class Score extends React.Component {
   state= {
-    count:0
+    count: 0
   };
 
   handleIncrement = () => {
@@ -20,10 +20,10 @@ class Score extends React.Components {
   render () {
     return (
       <div className="panel-body header">
-      <section className="row text-center">
+      <section className="row text-center"></section>
       <div className="col-md-4 col-sm-12">
       </div>
-      </section>
+      </div>
     );
   }
 }

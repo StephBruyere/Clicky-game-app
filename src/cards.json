@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "name": "Summer",
+      "image": "assets/imgs/summer.png",
+      "selected:":false
+    },
+    {
+      "id": 2,
+      "name": "Beth",
+      "image":"assets/imgs/beth.png",
+      "selected:":false
+    },
+    {
+      "id": 3,
+      "name": "Birdperson",
+      "image":"assets/imgs/birdperson.png",
+      "selected:":false
+    },
+    {
+      "id": 4,
+      "name": "Gianthead",
+      "image": "assets/imgs/gianthead.png",
+      "selected:":false
+    },
+    {
+      "id": 5,
+      "name": "Goldenford",
+      "image":"assets/imgs/goldenford.png",
+      "selected:":false
+    },
+    {
+      "id": 6,
+      "name": "Jerry",
+      "image": "assets/imgs/jerry.png",
+      "selected:":false
+    },
+    {
+      "id": 7,
+      "name": "Jessica",
+      "image": "assets/imgs/jessica.png",
+      "selected:":false
+    },
+    {
+      "id": 8,
+      "name": "Meeseeks",
+      "image":"assets/imgs/meeseeks.png",
+      "selected:":false
+    },
+    {
+      "id": 9,
+      "name": "Morty",
+      "image": "assets/imgs/morty.png",
+      "selected:":false
+    },
+    {
+      "id": 10,
+      "name": "Mr",
+      "image": "assets/imgs/mr.png",
+      "selected:":false
+    },
+    {
+      "id": 11,
+      "name": "Rick",
+      "image": "assets/imgs/Rick.png",
+      "selected:":false
+    },
+    {
+      "id": 12,
+      "name": "Evil",
+      "image":"assets/imgs/evilmorty.png",
+      "selected:":false
+    }
+  ]

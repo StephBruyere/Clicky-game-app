@@ -8,7 +8,7 @@ import "../styles/header.css";
     <img className="brand" alt="logo" src='https://upload.wikimedia.org/wikipedia/en/c/c8/Rick_and_Morty_logo.png' />
     </div>
     <div className="col-md-8 col-sm-12">
-    <div className="navInfo"><span className=" glyphicon glyphicon-hand-up"></span>Click Game</div>
+    <div className="navInfo"><span className=" glyphicon glyphicon-hand-up"></span>Score: </div>
     </div>
     </section>
     </div>
