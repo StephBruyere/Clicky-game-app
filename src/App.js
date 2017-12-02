@@ -8,7 +8,7 @@ import FriendCard from "./components/friends";
 class Card extends Component {
     state = {
       friends,
-      count:0
+      count: 0
     }
 
     removeFriend = id => {
@@ -25,7 +25,10 @@ class Card extends Component {
         this.state.count = 0
       }
       friends.sort(function(a, b){return 0.5 - Math.random()});
-      this.setState ({friends}) ;
+      this.setState({
+        friends,
+        count: this.state.count
+      });
       console.log(friends)
     } 
   
@@ -34,8 +37,8 @@ class Card extends Component {
   
     render() {
       return (
-        <Counter count={this.state.count}/>,
         <Section>
+        <Counter count={this.state.count}/>
           {this.state.friends.map(friend => (
             <FriendCard
               removeFriend={this.removeFriend}
@@ -55,7 +58,6 @@ class Card extends Component {
 const App = () => (
 <div>
 <Header/>
-<Counter />
 <Section />
 <Card />
 </div>
