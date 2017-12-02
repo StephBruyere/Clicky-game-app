@@ -16,10 +16,10 @@ class Card extends Component {
       if (friends[id].selected === false) {
          console.log(this.state.count)        
         this.state.count +=1
-        console.log("hooray!" + this.statecount)
+       
+        console.log("hooray!")
       friends[id].selected=true;} 
-      else {
-        this.handleNeg;  
+      else { 
         friends[id].selected=false;
         console.log("booo")
         this.state.count = 0
@@ -34,6 +34,7 @@ class Card extends Component {
   
     render() {
       return (
+        <Counter count={this.state.count}/>,
         <Section>
           {this.state.friends.map(friend => (
             <FriendCard
