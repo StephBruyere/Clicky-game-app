@@ -3,7 +3,8 @@
     "id": 0,
     "name": "Evil",
     "image":"assets/imgs/evilmorty.png",
-    "selected":false
+    "selected":false,
+    "count":0
   },
     {
       "id": 1,

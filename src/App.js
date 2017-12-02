@@ -7,20 +7,34 @@ import FriendCard from "./components/friends";
 
 class Card extends Component {
     state = {
-      friends
+      friends,
+      count:0
     }
 
     removeFriend = id => {
-      const friends = this.state.friends.filter(friend => friend.id === id) 
-      this.setState({friends})
+      const friends =this.state.friends
+      if (friends[id].selected === false) {
+         console.log(this.state.count)        
+        this.state.count +=1
+        console.log("hooray!" + this.statecount)
+      friends[id].selected=true;} 
+      else {
+        this.handleNeg;  
+        friends[id].selected=false;
+        console.log("booo")
+        this.state.count = 0
+      }
+      friends.sort(function(a, b){return 0.5 - Math.random()});
+      this.setState ({friends}) ;
       console.log(friends)
+    } 
+  
+    compare = match => {  
     }
-
-    
+  
     render() {
       return (
         <Section>
-        {console.log(friends)}
           {this.state.friends.map(friend => (
             <FriendCard
               removeFriend={this.removeFriend}
@@ -28,6 +42,7 @@ class Card extends Component {
               key={friend.id}
               name={friend.name}
               image={friend.image}
+              selected={friend.selected}
             />
           ))}
         </Section>
@@ -38,8 +53,7 @@ class Card extends Component {
 
 const App = () => (
 <div>
-<Header>
- </Header>
+<Header/>
 <Counter />
 <Section />
 <Card />
