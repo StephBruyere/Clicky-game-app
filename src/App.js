@@ -1,23 +1,26 @@
 import React, { Component } from "react";
 import Header from "./components/header";
 import Section from "./components/section";
-import Score from "./components/score";
+import Counter from "./components/Counter";
 import friends from "./cards.json";
 import FriendCard from "./components/friends";
 
 class Card extends Component {
     state = {
       friends
-    };
+    }
 
     removeFriend = id => {
-      const friends = this.state.friends.filter(friend => friend.id !== id);
-      this.setState({ friends });
-    };
+      const friends = this.state.friends.filter(friend => friend.id === id) 
+      this.setState({friends})
+      console.log(friends)
+    }
 
+    
     render() {
       return (
         <Section>
+        {console.log(friends)}
           {this.state.friends.map(friend => (
             <FriendCard
               removeFriend={this.removeFriend}
@@ -35,8 +38,9 @@ class Card extends Component {
 
 const App = () => (
 <div>
-<Header />
-<Score />
+<Header>
+ </Header>
+<Counter />
 <Section />
 <Card />
 </div>
