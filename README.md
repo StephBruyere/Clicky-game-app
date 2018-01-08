@@ -7,4 +7,4 @@ This application allows the user play a quick memory game. The object of the gam
 
 View the live app at: https://quiet-gorge-19766.herokuapp.com/
 
-![demo](customBurger.gif)
+![demo](clickgame.gif)
